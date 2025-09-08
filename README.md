@@ -26,7 +26,7 @@ This repository showcases my **featured projects** and skills in **frontend, bac
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/Dhana7336/Dhana_portfolio.git
    cd portfolio
 
 2. Install dependencies  
