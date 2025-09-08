@@ -1,0 +1,63 @@
+// App.scss - Enhanced with better global styles
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #f8fafc; // Light text for dark theme
+  background-color: #0f172a; // Dark background
+  overflow-x: hidden;
+}
+
+// Smooth scrolling for entire site
+html {
+  scroll-behavior: smooth;
+}
+
+// Section title styles (you were already using this)
+.section-title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+  
+  // Add gradient text effect
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Skill icons (you were already using this)
+.skill-icon {
+  font-size: 180%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+// Container class for consistent width
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }

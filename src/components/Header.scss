@@ -1,0 +1,194 @@
+//Header.scss - FIXED WITH VARIABLES
+// Define the color variables first
+$dark-bg: #0f172a;
+$light-bg: #f1f5f9;
+$primary-color: #6366f1;
+$secondary-color: #8b5cf6;
+$text-light: #f8fafc;
+$text-dark: #1e293b;
+$subtext-light: #94a3b8;
+$dark-gradient: linear-gradient(135deg, #4f46e5, #7c3aed);
+
+// =====================
+// Header & Hero Section
+// =====================
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: $dark-bg; // Matches body/contact section
+    transition: all 0.3s ease;
+    box-shadow: none;
+  
+    &.scrolled {
+      background-color: rgba(15, 23, 42, 0.95); // Semi-transparent dark
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+  
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav-left {
+      display: flex;
+      flex-direction: column;
+  
+      .nav-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $text-light;
+      }
+  
+      .nav-title {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: $subtext-light;
+      }
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+  
+      a {
+        text-decoration: none;
+        color: $text-light;
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.2s ease;
+  
+        &:hover {
+          color: $primary-color;
+          transform: translateY(-2px);
+        }
+  
+        &.active {
+          color: $secondary-color;
+          border-bottom: 2px solid $secondary-color;
+        }
+      }
+    }
+  }
+  
+  // =====================
+  // Hero Section
+  // =====================
+  .hero-section {
+    background: $dark-bg;
+    color: $text-light;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+  
+    .hero-content {
+      max-width: 800px;
+  
+      .header-icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        background: $dark-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+  
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: $text-light;
+      }
+  
+      .title-container {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $primary-color;
+  
+        .title-styles {
+          background: linear-gradient(90deg, $primary-color, $secondary-color);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .hero-intro {
+        font-size: 1.3rem;
+        max-width: 800px;
+        margin: 20px auto;
+        line-height: 1.8;
+        color: $subtext-light; // softer than pure white
+      }
+      
+      .hero-headline {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-top: 15px;
+      }
+      
+    }
+  }
+  
+  // =====================
+  // Light Theme Overrides
+  // =====================
+  .light-theme {
+    .sticky-nav {
+      background-color: $light-bg;
+  
+      &.scrolled {
+        background-color: rgba(241, 245, 249, 0.9);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      }
+  
+      .nav-name {
+        color: $text-dark;
+      }
+      .nav-title {
+        color: $subtext-light;
+      }
+      .nav-links a {
+        color: $text-dark;
+  
+        &:hover {
+          color: $primary-color;
+        }
+        &.active {
+          color: $secondary-color;
+          border-bottom: 2px solid $secondary-color;
+        }
+      }
+    }
+  
+    .hero-section {
+      background: $light-bg;
+      color: $text-dark;
+  
+      .header-icon {
+        background: $dark-gradient; // keep gradient icon
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      h1 {
+        color: $text-dark;
+      }
+  
+      .title-container {
+        .title-styles {
+          background: linear-gradient(90deg, $primary-color, $secondary-color);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+  

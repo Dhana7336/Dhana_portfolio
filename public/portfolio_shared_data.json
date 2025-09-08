@@ -1,0 +1,21 @@
+{
+    "basic_info": {
+      "name": "Dhana Lakshmi Parupudi",
+      "titles": [ "Full Stack Developer", "Data Engineer", "Frontend Developer", "Backend Developer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "instagram",
+          "url": "https://www.instagram.com",
+          "class": "fab fa-instagram"
+        }
+      ],
+      "image": "myProfile.jpg"
+    }
+    
+}
+  
