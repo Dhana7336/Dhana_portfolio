@@ -1,4 +1,4 @@
-// Projects.js - Updated with proper grid layout
+// Projects.js - Fixed version
 import React, { Component } from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 import "./Projects.scss";
@@ -28,13 +28,25 @@ class Projects extends Component {
 
     const projects = this.props.resumeProjects?.slice(0, 8).map((project) => {
       const tools = project.technologies?.slice(0, 3).map((t) => t.name);
+      
+      // Fixed image path handling
+      let imageSrc = placeholderImg;
+      if (project.images?.[0]) {
+        imageSrc = project.images[0].startsWith('images/') 
+          ? `${process.env.PUBLIC_URL}/${project.images[0]}`
+          : project.images[0];
+      }
+      
       return (
         <div className="project-card" key={project.title}>
           <div className="project-img-container" onClick={() => detailsModalShow(project)}>
             <img
-              src={project.images?.[0] || placeholderImg}
+              src={imageSrc}
               alt={project.title}
               className="project-img"
+              onError={(e) => {
+                e.target.src = placeholderImg;
+              }}
             />
             <div className="project-overlay">
               <span className="view-project">View Project</span>
