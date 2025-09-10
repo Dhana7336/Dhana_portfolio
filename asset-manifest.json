@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Dhana_portfolio/static/css/main.88030e25.css",
-    "main.js": "/Dhana_portfolio/static/js/main.7b81f50c.js",
+    "main.js": "/Dhana_portfolio/static/js/main.80fb66d9.js",
     "static/media/myProfile.png": "/Dhana_portfolio/static/media/myProfile.e3c104d94a977b0492f5.png",
     "index.html": "/Dhana_portfolio/index.html",
     "main.88030e25.css.map": "/Dhana_portfolio/static/css/main.88030e25.css.map",
-    "main.7b81f50c.js.map": "/Dhana_portfolio/static/js/main.7b81f50c.js.map"
+    "main.80fb66d9.js.map": "/Dhana_portfolio/static/js/main.80fb66d9.js.map"
   },
   "entrypoints": [
     "static/css/main.88030e25.css",
-    "static/js/main.7b81f50c.js"
+    "static/js/main.80fb66d9.js"
   ]
 }
