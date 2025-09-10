@@ -31,6 +31,13 @@ class App extends Component {
     this.loadSharedData();
     this.loadResumeFromPath('res_primaryLanguage.json');
   }
+  getPath(filename){
+    if(process.env.NODE_ENV === 'production'){
+      return `${process.env.PUBLIC_URL}/${filename}`;
+    } else {
+      return filename;
+    }
+  }
 
   loadResumeFromPath(path) {
     $.ajax({
@@ -47,8 +54,9 @@ class App extends Component {
   }
 
   loadSharedData() {
+    const path = this.getPath('portfolio_shared_data.json');
     $.ajax({
-      url: `portfolio_shared_data.json`,
+      url: `path`,
       dataType: "json",
       cache: false,
       success: function (data) {
