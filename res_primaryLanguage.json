@@ -130,7 +130,7 @@
       "title": "Real-Time Collaborative Code Editor (Like Replit)",
       "description": "Built a full-stack application allowing multiple developers to code together in real-time. Implemented operational transforms (OT) for conflict resolution in concurrent editing, ensuring code consistency. Features include live syntax highlighting, language support, video/audio chat via WebRTC, and project execution in isolated Docker containers. Supported 500+ concurrent users with sub-100ms latency",
       "images": [
-        "images/portfolio/AIChat/coding Agent.png"
+        "images/portfolio/AIChat/coding_Agent.png"
       ],
       "url": "https://github.com",
       "technologies": [
