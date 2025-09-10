@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Dhana_portfolio/static/css/main.8678fb65.chunk.css",
+    "main.js": "/Dhana_portfolio/static/js/main.36ed286c.chunk.js",
+    "main.js.map": "/Dhana_portfolio/static/js/main.36ed286c.chunk.js.map",
+    "runtime-main.js": "/Dhana_portfolio/static/js/runtime-main.82a4d937.js",
+    "runtime-main.js.map": "/Dhana_portfolio/static/js/runtime-main.82a4d937.js.map",
+    "static/css/2.c03e993c.chunk.css": "/Dhana_portfolio/static/css/2.c03e993c.chunk.css",
+    "static/js/2.65018e77.chunk.js": "/Dhana_portfolio/static/js/2.65018e77.chunk.js",
+    "static/js/2.65018e77.chunk.js.map": "/Dhana_portfolio/static/js/2.65018e77.chunk.js.map",
+    "index.html": "/Dhana_portfolio/index.html",
+    "precache-manifest.8327488f210ba49a9d74f9892b85761f.js": "/Dhana_portfolio/precache-manifest.8327488f210ba49a9d74f9892b85761f.js",
+    "service-worker.js": "/Dhana_portfolio/service-worker.js",
+    "static/css/2.c03e993c.chunk.css.map": "/Dhana_portfolio/static/css/2.c03e993c.chunk.css.map",
+    "static/css/main.8678fb65.chunk.css.map": "/Dhana_portfolio/static/css/main.8678fb65.chunk.css.map",
+    "static/js/2.65018e77.chunk.js.LICENSE.txt": "/Dhana_portfolio/static/js/2.65018e77.chunk.js.LICENSE.txt",
+    "static/media/myProfile.png": "/Dhana_portfolio/static/media/myProfile.fb291490.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82a4d937.js",
+    "static/css/2.c03e993c.chunk.css",
+    "static/js/2.65018e77.chunk.js",
+    "static/css/main.8678fb65.chunk.css",
+    "static/js/main.36ed286c.chunk.js"
+  ]
+}
