@@ -25,7 +25,7 @@
       flex-wrap: wrap;
   
       .skills-box {
-        background: linear-gradient(135deg, #6366f1, #98eeda, #f6f1ff, #1e2a47);
+        background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
         background-size: 400% 400%;
         animation: gradient-rotate 10s ease infinite; // continuous animation
         padding: 30px;
@@ -71,7 +71,7 @@
       }
       
           
-      }
+ }
     
   
     @media (max-width: 768px) {
@@ -85,4 +85,16 @@
       }
     }
   }
+  // Add the missing animation keyframes
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
     

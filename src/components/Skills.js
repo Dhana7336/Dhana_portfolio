@@ -3,16 +3,16 @@ import "./Skills.scss";
 
 const skillsData = [
   {
-    category: "Frontend / Full Stack",
-    skills: ["React.js", "Angular", "Redux", "Context API", "HTML", "CSS", "Tailwind", "TypeScript", "JavaScript", "Next.js","Jest"]
+    category: "Full Stack Engineer",
+    skills: ["React.js", "Next.js", "Angular", "Node.js", "Express.js", "Spring Boot", "Python", "TypeScript", "REST API", "GraphQL"]
   },
   {
-    category: "Backend / APIs",
-    skills: ["Node.js", "Express.js", "Spring Boot", "Java 8/11", "Python", "REST API","GraphQl","JWT","OAuth","PostgreSQL", "MySQL"]
+    category: "Data Engineering",
+    skills: ["ETL", "PostgreSQL", "MySQL", "PySpark", "Apache Airflow", "Apache Kafka", "Data Pipelines", "Redshift", "Snowflake"]
   },
   {
-    category: "Data Engineering / ETL",
-    skills: ["Python", "PySpark", "Databricks", "Apache Airflow", "Apache Kafka","AWS Glue", "AWS Lambda", "Kinesis", "Redshift", "Snowflake"]
+    category: "Cloud & AI/ML",
+    skills: ["AWS", "Azure", "GCP", "TensorFlow", "PyTorch", "LLMs", "RAG", "Model Deployment"]
   }
 ];
 

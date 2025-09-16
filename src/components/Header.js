@@ -7,17 +7,32 @@ class Header extends Component {
     super();
     this.state = { 
       isScrolled: false,
-      activeSection: "home"
+      activeSection: "home",
+      currentTitleIndex: 0,
+      showTitle: true
     };
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     this.handleScroll(); // Initial check
-  }
+  this.titleInterval = setInterval(() => {
+    this.setState(prevState => ({
+      showTitle: false
+    }), () => {
+      setTimeout(() => {
+        this.setState(prevState => ({
+          currentTitleIndex: (prevState.currentTitleIndex + 1) % 4,
+          showTitle: true
+        }));
+      }, 500);
+    });
+  }, 3000);
+}
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    clearInterval(this.titleInterval);
   }
 
   handleScroll = () => {
@@ -57,11 +72,14 @@ class Header extends Component {
   isActive(section) {
     return this.state.activeSection === section;
   }
-
-  render() {
-    if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
-    }
+  render(){
+    const jobTitles = [
+      "Software Engineer",
+      "Full Stack Developer", 
+      "Data Engineer",
+      "Frontend Developer"
+    ];
+  
 
     return (
       <>
@@ -69,7 +87,7 @@ class Header extends Component {
         <nav className={`sticky-nav ${this.state.isScrolled ? 'scrolled' : ''}`}>
           <div className="nav-container">
             <div className="nav-left">
-              <span className="nav-name">Dhana</span>
+              <span className="nav-name">DL</span>
             </div>
             
             <div className="nav-links">
@@ -116,18 +134,44 @@ class Header extends Component {
         {/* Hero Section */}
 <section id="home" className="hero-section">
   <div className="hero-content">
-    <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-    <h1>Hi, I'm {name}</h1>
+    <h1>Hi, I'm Dhana Lakshmi Parupudi</h1>
+    
+<div className="animated-title-container">
+  <h2 className={`animated-title ${this.state.showTitle ? 'show' : 'hide'}`}>
+    {jobTitles[this.state.currentTitleIndex]}
+  </h2>
+</div>
 
     {/* Intro line */}
     <p className="hero-intro">
-    A Full-Stack Developer and Data Engineer passionate about building impactful solutions that solve real-world problems. I specialize in creating intuitive front-end experiences, robust back-end architectures, and reliable data pipelines that empower teams and drive business success
+    Blending sleek software engineering with cutting-edge AI/ML to craft impactful, real-world solutions. I build intuitive front-end interfaces, scalable back-end systems, and intelligent data pipelines that power innovation and accelerate growth.
     </p>
 
     {/* Headline */}
-    <p className="hero-headline">
-      Building Scalable Web Apps & Reliable Data Pipelines
-    </p>
+    
+    {/* Action Buttons */}
+<div className="hero-actions">
+  <a
+    href="#projects"
+    className="btn btn-gradient-primary"
+    onClick={(e) => {
+      e.preventDefault();
+      this.scrollToSection("projects");
+    }}
+  >
+    View My Work
+  </a>
+  <a
+    href="#contact"
+    className="btn btn-gradient-secondary"
+    onClick={(e) => {
+      e.preventDefault();
+      this.scrollToSection("contact");
+    }}
+  >
+    Get In Touch
+  </a>
+</div>
 
     {/* Social Links */}
     <div className="hero-social-links">
@@ -151,5 +195,4 @@ class Header extends Component {
     );
   }
 }
-
 export default Header;

@@ -116,6 +116,19 @@
           color: #6366f1;
           margin-bottom: 15px;
         }
+        .clients {
+          color: #2d3748;
+          font-size: 1rem;
+          margin-bottom: 12px;
+          padding: 8px 12px;
+          background: #d4c8ef;
+          border-left: 4px solid #8b5cf6;
+          border-radius: 4px;
+          
+          strong {
+            color: #2d3748;
+          }
+        }
         .main-tech {
           color: #000;        // black text
           font-size: 0.9rem;

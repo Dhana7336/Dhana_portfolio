@@ -105,7 +105,7 @@ $dark-gradient: linear-gradient(135deg, #4f46e5, #7c3aed);
       h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
-        color: $text-light;
+        color: $primary-color;
       }
   
       .title-container {
@@ -136,6 +136,134 @@ $dark-gradient: linear-gradient(135deg, #4f46e5, #7c3aed);
       
     }
   }
+  // =====================
+// Animated Elements
+// =====================
+
+// Animated Title Styles
+.animated-title-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.animated-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease-in-out;
+  
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  &.hide {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+// Gradient Button Styles
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  
+  .btn {
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    &:hover::before {
+      left: 100%;
+    }
+    
+    &.btn-gradient-primary {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+      color: white;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+      
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+      }
+    }
+    
+    &.btn-gradient-secondary {
+      background: transparent;
+      color: $primary-color;
+      box-shadow: 2px solid transparent;
+      position:relative;
+      z-index: 1;
+
+      
+      
+      
+      &:hover {
+        background: $primary-color;
+       color: white;
+       transform: translateY(-3px);
+       box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+       
+       
+    
+      }
+    }
+  }
+}
+
+// Social Links Styles
+.hero-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+    
+    &:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5);
+    }
+  }
+}
   
   // =====================
   // Light Theme Overrides
@@ -170,25 +298,43 @@ $dark-gradient: linear-gradient(135deg, #4f46e5, #7c3aed);
   
     .hero-section {
       background: $light-bg;
+    color: $text-dark;
+
+    .header-icon {
+      background: $dark-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
       color: $text-dark;
-  
-      .header-icon {
-        background: $dark-gradient; // keep gradient icon
+    }
+
+    .title-container {
+      .title-styles {
+        background: linear-gradient(90deg, $primary-color, $secondary-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-  
-      h1 {
-        color: $text-dark;
-      }
-  
-      .title-container {
-        .title-styles {
-          background: linear-gradient(90deg, $primary-color, $secondary-color);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
+    }
+    .animated-title {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
+
+  // ADD SOCIAL LINK STYLES HERE - AT THE END OF .light-theme
+  .hero-social-links .social-link {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+    
+    &:hover {
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+    }
+  }
+}
+
+      
   
+    

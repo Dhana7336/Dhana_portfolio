@@ -10,9 +10,6 @@ $secondary-color: #8b5cf6;
 $text-light: #f8fafc;
 $text-dark: #1e293b;
 $subtext-light: #94a3b8;
-$linkedin-color: #0a66c2; 
-$github-color: #333333;
-$github-light: #6e5494;
 
 .about-section {
   background-color: $dark-bg;
@@ -24,159 +21,130 @@ $github-light: #6e5494;
     margin: 0 auto;
   }
 
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(90deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
   .about-content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    //justify-content: center; // This helps with vertical centering
-    //min-height: 80vh; // Optional: makes the section taller for better spacing
-  
-    @media (min-width: 768px) {
-      flex-direction: row;
-      align-items: flex-start;//chnage from flex-end to flex-start
-      justify-content: space-between; // Better spacing between image and content
-      gap: 3rem;
-    }
-  }
-  
-  .about-image {
-    margin: 3rem 0 2rem 0; // Top, Right, Bottom, Left - more space on top
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 4rem;// increaset this number to move down more 
-    margin-bottom: 2rem;
+    gap: 3rem;
+    margin-bottom: 4rem;
     
     @media (min-width: 768px) {
-      margin: 3rem 0 0 0; // Even more space on top for desktop
-      flex: 1;
-      justify-content: center;
-      margin-top:25rem; 
+      flex-direction: row;
+      align-items: center;
     }
+  }
+
+  .about-image {
+    display: flex;
+    justify-content: center;
+    
+    @media (min-width: 768px) {
+      flex: 1;
+    }
+    
     img {
-      width: 250px;
+      width: 280px;
       height: 380px;
       border-radius: 12px;
       object-fit: cover;
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
       border: 3px solid $primary-color;
-      display: block;
-      margin: 0 auto;
     }
   }
 
   .about-content {
     @media (min-width: 768px) {
-      flex: 2;
+      flex: 1.5;
     }
-
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
-      background: linear-gradient(90deg, $primary-color, $secondary-color);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
+    
     .about-text {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
       color: $subtext-light;
       line-height: 1.8;
+      text-align: center;
+      white-space: pre-line;
+      
+      @media (min-width: 768px) {
+        text-align: left;
+        padding-left: 2rem;
+      }
     }
   }
 
-  .whatido {
-    margin-top: 3rem;
-
+  .expertise-section {
+    margin-top: 4rem;
+    
     .sub-title {
       font-size: 2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       font-weight: 600;
       color: $primary-color;
+      text-align: center;
       position: relative;
-      display: inline-block;
       
       &::after {
         content: '';
         position: absolute;
         bottom: -8px;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         width: 50px;
         height: 4px;
         background: $primary-color;
         border-radius: 2px;
       }
     }
-
-    .whatido-cards {
+    
+    .expertise-cards {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
       
       @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
-    }
-
-    .whatido-card {
-      background: $dark-card-bg;
-      padding: 1.8rem;
-      border-radius: 16px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-left: 4px solid $primary-color;
-
-      h4 {
-        color: $secondary-color;
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      p {
-        color: $subtext-light;
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-      }
-
-      .tech-icons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.8rem;
-
-        .tech-icon {
-          display: flex;
-          align-items: center;
-          gap: 0.4rem;
-          background: rgba(255, 255, 255, 0.05);
-          padding: 0.5rem 0.9rem;
-          border-radius: 8px;
-          font-size: 0.9rem;
-          color: $text-light;
-          transition: all 0.3s ease;
-
-          i {
-            font-size: 1.6rem;
-            // Let the Devicon colored class handle the colors
-          }
-
-          &:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-2px);
-          }
+      
+      .expertise-card {
+        background: $dark-card-bg;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        border-top: 4px solid $primary-color;
+        
+        .expertise-icon {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
         }
-      }
-
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        
+        h4 {
+          color: $secondary-color;
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
+          font-weight: 600;
+        }
+        
+        p {
+          color: $subtext-light;
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+        
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
       }
     }
   }
@@ -188,19 +156,3 @@ $github-light: #6e5494;
   color: $subtext-light;
   font-size: 1.2rem;
 }
-
-// Fix for Devicon colors - ensure they display in original colors
-.devicon-react-original.colored { color: #61DAFB; }
-.devicon-html5-plain-wordmark.colored { color: #E34F26; }
-.devicon-css3-plain-wordmark.colored { color: #1572B6; }
-.devicon-nodejs-plain.colored { color: #339933; }
-.devicon-angularjs-plain.colored { color: #DD0031; }
-.devicon-java-plain.colored { color: #007396; }
-.devicon-spring-plain.colored { color: #6DB33F; }
-.devicon-postgresql-plain.colored { color: #336791; }
-.devicon-amazonwebservices-plain-wordmark.colored { color: #232F3E; }
-.devicon-azure-plain-wordmark.colored { color: #0089D6; }
-.devicon-python-plain.colored { color: #3776AB; }
-.devicon-apache-line-wordmark.colored { color: #D22128; }
-.devicon-apachekafka-original.colored { color: #231F20; }
-.devicon-snowflake-plain.colored { color: #29B5E8; }

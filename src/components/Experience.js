@@ -31,7 +31,12 @@ const Experience = ({ resumeBasicInfo, resumeExperience }) => {
                 <h3 className="job-title">{workItem.title}</h3>
               </div>
               <h4 className="company">{workItem.company}</h4>
-              
+              {workItem.clients && (
+                <div className="clients">
+                  <strong>Clients: </strong>
+                  {workItem.clients}
+                </div>
+              )}
               {/* Show main technologies if available */}
               {workItem.mainTech && workItem.mainTech.length > 0 && (
                 <div className="main-tech">

@@ -10,9 +10,8 @@
       "technologies": [
         { "class": "devicon-angularjs-plain", "name": "Apache Kafka" },
         { "class": "devicon-typescript-plain", "name": "Databricks" },
-        { "class": "devicon-csharp-plain", "name": "AWS EMR" },
         { "class": "devicon-csharp-plain", "name": "AWS MSK" },
-        { "class": "devicon-csharp-plain", "name": "AWS S3" },
+        { "class": "devicon-csharp-plain", "name": "AWS S3/EMR" },
         { "class": "devicon-csharp-plain", "name": "Docker" },
         { "class": "devicon-csharp-plain", "name": "Python/ML" },
         { "class": "devicon-csharp-plain", "name": "Grafana" },
@@ -23,7 +22,7 @@
       "title": "Cloud-Native Music Streaming Analytics Platform",
       "description": "Designed and deployed a complete data platform processing 100GB+ of streaming data daily on AWS. Implemented both real-time and batch processing pipelines with automated data quality checks, reducing data issues by 85% and enabling real-time business intelligence for music analytics.",
       "images": [
-        "images/portfolio/music/music.jpg"
+        "images/portfolio/music/music_cloud.jpg"
       ],
       "url": "https://github.com",
       "technologies": [
@@ -83,7 +82,7 @@
       "technologies": [
         { "class": "devicon-react-original", "name": "FastAPI" },
         { "class": "devicon-javascript-plain", "name": "Python" },
-        { "class": "devicon-javascript-plain", "name": "React.js" },
+        { "class": "devicon-javascript-plain", "name": "Angular" },
         { "class": "devicon-javascript-plain", "name": "Redis" },
         { "class": "devicon-javascript-plain", "name": "Docker" },
         { "class": "devicon-javascript-plain", "name": "AWS" },
@@ -91,41 +90,7 @@
         { "class": "devicon-javascript-plain", "name": "WebRTC" }
       ]
     },
-    {
-      "title": "Enterprise SEO Intelligence Platform",
-      "description": "A comprehensive SEO analytics dashboard using React.js and Next.js that processes real-time website performance data. The platform provides AI-powered SEO recommendations, competitor analysis, and automated reporting, helping marketing teams improve search rankings by 65% and organic traffic by 200%.",
-      "images": [
-        "images/portfolio/SEO/SEO.png"
-      ],
-      "url": "https://github.com",
-      "technologies": [
-        { "class": "devicon-react-original", "name": "React.js" },
-        { "class": "devicon-javascript-plain", "name": "Next.js" },
-        { "class": "devicon-javascript-plain", "name": "Typescript" },
-        { "class": "devicon-javascript-plain", "name": "D3.js" },
-        { "class": "devicon-javascript-plain", "name": "css" },
-        { "class": "devicon-javascript-plain", "name": "Google lighthouse API" },
-        { "class": "devicon-javascript-plain", "name": "OpenAI API" },
-        { "class": "devicon-javascript-plain", "name": "Jest" }
-      ]
-    },
-    {
-      "title": "VibeFit: Social Fitness & Wellness Tracker",
-      "description": "Designed and developed a modern Angular social fitness application that lets users track workouts, share progress, and compete with friends. Integrated with wearable APIs (Google Fit/Apple Health) to import data and used D3.js for beautiful activity charts. Features include a social feed, achievement badges, and personalized workout recommendations, increasing user engagement by 40%.",      "images": [
-
-        "images/portfolio/Fitness/Fitness_Tract.jpg"
-      ],
-      "url": "https://github.com",
-      "technologies": [
-        { "class": "devicon-react-original", "name": "Angular 17+" },
-        { "class": "devicon-javascript-plain", "name": "Typescript" },
-        { "class": "devicon-javascript-plain", "name": "SCSS" },
-        { "class": "devicon-javascript-plain", "name": "Angular Material" },
-        { "class": "devicon-javascript-plain", "name": "D3.js" },
-        { "class": "devicon-javascript-plain", "name": "Mongo DB" },
-        { "class": "devicon-javascript-plain", "name": "Express.js" }
-      ]
-    },
+    
     {
       "title": "Real-Time Collaborative Code Editor (Like Replit)",
       "description": "Built a full-stack application allowing multiple developers to code together in real-time. Implemented operational transforms (OT) for conflict resolution in concurrent editing, ensuring code consistency. Features include live syntax highlighting, language support, video/audio chat via WebRTC, and project execution in isolated Docker containers. Supported 500+ concurrent users with sub-100ms latency",
@@ -151,7 +116,7 @@
     {
       "company": "AriesView",
       "title": "Associate Software Engineer Intern",
-      "years": "06.2025 - Present",
+      "years": "05.2025 - Present",
       "mainTech": [
         "Full-stack Web Development",
         "Backend Development",
@@ -171,7 +136,8 @@
     {
       "company": "Virtusa Corporation",
       "title": "Associate Software Engineer",
-      "years": "09.2020 - 08.2023",
+      "years": "06.2020 - 08.2023",
+      "clients": "Bank of Montreal & Bank of New York Mellon",
       "mainTech": [
         "Full Stack Development",
         "Data Engineering",
@@ -181,18 +147,20 @@
       "technologies": [
         "Java 8",
         "Python",
+        "ReactJs",
         "Spring Boot",
-        "Rest API",
         "AWS",
         "Flask",
         "Snowflake",
-        "Redshift"
+        "Redshift",
+        "Kubernetes",
+        "Docker"
       ]
     },
     {
       "company": "Virtusa Corporation",
       "title": "Software Engineer Intern",
-      "years": "04.2020 - 08.2020",
+      "years": "01.2020 - 05.2020",
       "mainTech": [
         "Frontend",
         "Backend Development",
