@@ -1,0 +1,181 @@
+{
+  "projects": [
+    {    
+      "title": "Real-Time Financial Fraud Detection System",
+      "description": "Designed and deployed a production-grade fraud detection system processing 500K+ transactions daily using AWS and Databricks. Implemented real-time streaming with Spark Structured Streaming on Databricks, reducing detection latency from 5 minutes to <200ms with 99.5% accuracy. The system uses ML models for anomaly detection and significantly reduced fraud losses.",
+      "images": [
+        "images/portfolio/risk/financial-risk.jpg"
+      ],
+      "url": "https://github.com",
+      "technologies": [
+        { "class": "devicon-angularjs-plain", "name": "Apache Kafka" },
+        { "class": "devicon-typescript-plain", "name": "Databricks" },
+        { "class": "devicon-csharp-plain", "name": "AWS MSK" },
+        { "class": "devicon-csharp-plain", "name": "AWS S3/EMR" },
+        { "class": "devicon-csharp-plain", "name": "Docker" },
+        { "class": "devicon-csharp-plain", "name": "Python/ML" },
+        { "class": "devicon-csharp-plain", "name": "Grafana" },
+        { "class": "devicon-csharp-plain", "name": "Terraform" }
+      ]
+    },
+    {
+      "title": "Cloud-Native Music Streaming Analytics Platform",
+      "description": "Designed and deployed a complete data platform processing 100GB+ of streaming data daily on AWS. Implemented both real-time and batch processing pipelines with automated data quality checks, reducing data issues by 85% and enabling real-time business intelligence for music analytics.",
+      "images": [
+        "images/portfolio/music/music_cloud.jpg"
+      ],
+      "url": "https://github.com",
+      "technologies": [
+        { "class": "devicon-react-original", "name": "Python" },
+        { "class": "devicon-javascript-plain", "name": "Snowflake" },
+        { "class": "devicon-javascript-plain", "name": "AWS S3/EC2/IAM" },
+        { "class": "devicon-javascript-plain", "name": "dbt" },
+        { "class": "devicon-javascript-plain", "name": "Apache Spark" },
+        { "class": "devicon-javascript-plain", "name": "Apache Kafka" },
+        { "class": "devicon-javascript-plain", "name": "Terraform" }
+      ]
+    },
+    {
+      "title": "AI-Powered Financial Analytics Platform",
+      "description": "Designed and developed a comprehensive full-stack financial analytics application using Spring Boot and React.js. Integrated OpenAI for intelligent financial insights and natural language reporting, creating an intuitive interface that helps investors make data-driven decisions with AI-assisted analysis",
+      "images": [
+        "images/portfolio/Finance/AI_finance_3.jpg"
+      ],
+      "url": "https://github.com",
+      "technologies": [
+        { "class": "devicon-angularjs-plain", "name": "React.js" },
+        { "class": "devicon-typescript-plain", "name": "Spring Boot" },
+        { "class": "devicon-csharp-plain", "name": "Java 8" },
+        { "class": "devicon-csharp-plain", "name": "PostgreSQL" },
+        { "class": "devicon-csharp-plain", "name": "Typescript" },
+        { "class": "devicon-csharp-plain", "name": "Jwt Authentication" },
+        { "class": "devicon-csharp-plain", "name": "AWS EC2" },
+        { "class": "devicon-csharp-plain", "name": "Chart.js" }
+      ]
+    },
+    {
+      "title": "Stock Trading Analytics Platform",
+      "description": "Architected and developed a high-frequency trading engine using Java that processes 500,000+ orders per second with sub-millisecond latency. The system integrates with 15+ global exchanges, implements proprietary trading algorithms, and handles risk management for institutional clients, achieving 99.999% uptime and reducing trade execution time by 90% compared to traditional systems",
+      "images": [
+        "images/portfolio/Stock/Stock.jpg"  
+      ],
+      "url": "https://github.com",
+      "technologies": [
+        { "class": "devicon-react-original", "name": "Java" },
+        { "class": "devicon-javascript-plain", "name": "Spring Boot3" },
+        { "class": "devicon-javascript-plain", "name": "Kafka" },
+        { "class": "devicon-javascript-plain", "name": "Redis" },
+        { "class": "devicon-javascript-plain", "name": "Netty" },
+        { "class": "devicon-javascript-plain", "name": "Junit5" },
+        { "class": "devicon-javascript-plain", "name": "Kubernets" },
+        { "class": "devicon-javascript-plain", "name": "Docker" },
+        { "class": "devicon-javascript-plain", "name": "AWS EC2 & Elasticache" }
+      ]
+    },
+    {
+      "title": "Healthcare Patient Management Platform",
+      "description": "A HIPAA-compliant healthcare management system using FastAPI and React that serves 100+ medical practitioners and 10,000+ patients. The platform streamlines patient care through electronic health records, appointment scheduling, telemedicine integration, and AI-powered health insights, improving patient outcomes by 35% and reducing administrative workload by 50%",
+      "images": [
+        "images/portfolio/Hospital/Health.jpg"
+      ],
+      "url": "https://github.com",
+      "technologies": [
+        { "class": "devicon-react-original", "name": "FastAPI" },
+        { "class": "devicon-javascript-plain", "name": "Python" },
+        { "class": "devicon-javascript-plain", "name": "Angular" },
+        { "class": "devicon-javascript-plain", "name": "Redis" },
+        { "class": "devicon-javascript-plain", "name": "Docker" },
+        { "class": "devicon-javascript-plain", "name": "AWS" },
+        { "class": "devicon-javascript-plain", "name": "HIPPA Compliant" },
+        { "class": "devicon-javascript-plain", "name": "WebRTC" }
+      ]
+    },
+    
+    {
+      "title": "Real-Time Collaborative Code Editor (Like Replit)",
+      "description": "Built a full-stack application allowing multiple developers to code together in real-time. Implemented operational transforms (OT) for conflict resolution in concurrent editing, ensuring code consistency. Features include live syntax highlighting, language support, video/audio chat via WebRTC, and project execution in isolated Docker containers. Supported 500+ concurrent users with sub-100ms latency",
+      "images": [
+        "images/portfolio/AIChat/coding_Agent.png"
+      ],
+      "url": "https://github.com",
+      "technologies": [
+        { "class": "devicon-react-original", "name": "Next.js" },
+        { "class": "devicon-javascript-plain", "name": "Node.js" },
+        { "class": "devicon-javascript-plain", "name": "Express.js" },
+        { "class": "devicon-javascript-plain", "name": "Redis" },
+        { "class": "devicon-javascript-plain", "name": "Web RTC" },
+        { "class": "devicon-javascript-plain", "name": "Docker" },
+        { "class": "devicon-javascript-plain", "name": "PostgreSQL" },
+        { "class": "devicon-javascript-plain", "name": "Aws EC2" }
+      ]
+    }
+
+  ],
+
+  "experience": [
+    {
+      "company": "AriesView",
+      "title": "Associate Software Engineer Intern",
+      "years": "05.2025 - Present",
+      "mainTech": [
+        "Full-stack Web Development",
+        "Backend Development",
+        "Frontend Development",
+        "Testing"
+      ],
+      "technologies": [
+        "LLM",
+        "ReactJs",
+        "RAG",
+        "Python",
+        "PostgreSQL",
+        "Express.js",
+        "Azure"
+      ]
+    },
+    {
+      "company": "Virtusa Corporation",
+      "title": "Associate Software Engineer",
+      "years": "06.2020 - 08.2023",
+      "clients": "Bank of Montreal & Bank of New York Mellon",
+      "mainTech": [
+        "Full Stack Development",
+        "Data Engineering",
+        "ETL Pipelines",
+        "Backend APIs"
+      ],
+      "technologies": [
+        "Java 8",
+        "Python",
+        "ReactJs",
+        "Spring Boot",
+        "AWS",
+        "Flask",
+        "Snowflake",
+        "Redshift",
+        "Kubernetes",
+        "Docker"
+      ]
+    },
+    {
+      "company": "Virtusa Corporation",
+      "title": "Software Engineer Intern",
+      "years": "01.2020 - 05.2020",
+      "mainTech": [
+        "Frontend",
+        "Backend Development",
+        "REST API Integration"
+      ],
+      "technologies": [
+        "REST API",
+        "PostgreSQL",
+        "Java 8",
+        "Spring Boot",
+        "Postman",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ]
+    }
+  ]
+}

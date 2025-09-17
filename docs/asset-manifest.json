@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Dhana_portfolio/static/css/main.679b9dbd.css",
+    "main.js": "/Dhana_portfolio/static/js/main.1899b601.js",
+    "static/media/myProfile.png": "/Dhana_portfolio/static/media/myProfile.e3c104d94a977b0492f5.png",
+    "index.html": "/Dhana_portfolio/index.html",
+    "main.679b9dbd.css.map": "/Dhana_portfolio/static/css/main.679b9dbd.css.map",
+    "main.1899b601.js.map": "/Dhana_portfolio/static/js/main.1899b601.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.679b9dbd.css",
+    "static/js/main.1899b601.js"
+  ]
+}
