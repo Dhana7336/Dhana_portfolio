@@ -4,7 +4,7 @@ import "./Skills.scss";
 const skillsData = [
   {
     category: "Full Stack Engineer",
-    skills: ["React.js", "Next.js", "Angular", "Node.js", "Express.js", "Spring Boot", "Python", "TypeScript", "REST API", "GraphQL"]
+    skills: ["React.js", "Next.js", "Python", "Java", "C#", "Node.js", "Express.js", "Spring Boot", "TypeScript", "REST API", "GraphQL"]
   },
   {
     category: "Data Engineering",
@@ -12,7 +12,7 @@ const skillsData = [
   },
   {
     category: "Cloud & AI/ML",
-    skills: ["AWS", "Azure", "GCP", "TensorFlow", "PyTorch", "LLMs", "RAG", "Model Deployment"]
+    skills: ["AWS", "Azure", "GCP", "LangChain", "OpenAI", "Hugging Face", "Vector Embeddings", "LLMs", "RAG", "MoE", "Prompting", "Fine-tuning"]
   }
 ];
 

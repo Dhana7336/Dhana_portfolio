@@ -115,7 +115,7 @@
   "experience": [
     {
       "company": "AriesView",
-      "title": "Associate Software Engineer Intern",
+      "title": "Software Engineer, AI",
       "years": "05.2025 - Present",
       "mainTech": [
         "Full-stack Web Development",
@@ -130,7 +130,10 @@
         "Python",
         "PostgreSQL",
         "Express.js",
-        "Azure"
+        "Azure",
+        "LangChain",
+        "OpenAI",
+        "OCR"
       ]
     },
     {
