@@ -8,31 +8,31 @@
       ],
       "url": "https://github.com",
       "technologies": [
+        { "class": "devicon-csharp-plain", "name": "Python/AI" },
         { "class": "devicon-angularjs-plain", "name": "Apache Kafka" },
         { "class": "devicon-typescript-plain", "name": "Databricks" },
         { "class": "devicon-csharp-plain", "name": "AWS MSK" },
         { "class": "devicon-csharp-plain", "name": "AWS S3/EMR" },
         { "class": "devicon-csharp-plain", "name": "Docker" },
-        { "class": "devicon-csharp-plain", "name": "Python/ML" },
         { "class": "devicon-csharp-plain", "name": "Grafana" },
         { "class": "devicon-csharp-plain", "name": "Terraform" }
       ]
     },
     {
-      "title": "Cloud-Native Music Streaming Analytics Platform",
-      "description": "Designed and deployed a complete data platform processing 100GB+ of streaming data daily on AWS. Implemented both real-time and batch processing pipelines with automated data quality checks, reducing data issues by 85% and enabling real-time business intelligence for music analytics.",
+      "title": "Agentic Social Media Automation Platform",
+      "description": "Multi-agent AI platform for social media automation research, content writing, media generation, scraping, and publishing across Instagram, LinkedIn, YouTube & Reddit. Built with FastAPI + Next.js, leveraging autonomous agents for end-to-end social media management with intelligent content creation and distribution.",
       "images": [
-        "images/portfolio/music/music_cloud.jpg"
+        "images/portfolio/Agenticsocial/Agentic_chat.png"
       ],
       "url": "https://github.com",
       "technologies": [
-        { "class": "devicon-react-original", "name": "Python" },
-        { "class": "devicon-javascript-plain", "name": "Snowflake" },
-        { "class": "devicon-javascript-plain", "name": "AWS S3/EC2/IAM" },
-        { "class": "devicon-javascript-plain", "name": "dbt" },
-        { "class": "devicon-javascript-plain", "name": "Apache Spark" },
-        { "class": "devicon-javascript-plain", "name": "Apache Kafka" },
-        { "class": "devicon-javascript-plain", "name": "Terraform" }
+        { "class": "devicon-react-original", "name": "Go (Golang) Microservices" },
+        { "class": "devicon-javascript-plain", "name": "LangGraph" },
+        { "class": "devicon-javascript-plain", "name": "Agentic AI" },
+        { "class": "devicon-javascript-plain", "name": "AWS" },
+        { "class": "devicon-javascript-plain", "name": "OpenAI" },
+        { "class": "devicon-javascript-plain", "name": "Prompt Engineering" },
+        { "class": "devicon-javascript-plain", "name": "n8n" }
       ]
     },
     {
@@ -54,22 +54,21 @@
       ]
     },
     {
-      "title": "Stock Trading Analytics Platform",
-      "description": "Architected and developed a high-frequency trading engine using Java that processes 500,000+ orders per second with sub-millisecond latency. The system integrates with 15+ global exchanges, implements proprietary trading algorithms, and handles risk management for institutional clients, achieving 99.999% uptime and reducing trade execution time by 90% compared to traditional systems",
+      "title": "Crypto Trading Analytics Platform",
+      "description": "Architected and developed a real-time crypto trading analytics platform that processes high-volume market data streams from multiple exchanges and blockchain networks. Built with Python backend and Node.js WebSockets for real-time data streaming, integrated Web3.js for blockchain interactions, achieving sub-second latency and handling 1M+ market events per second with 99.99% uptime.",
       "images": [
         "images/portfolio/Stock/Stock.jpg"  
       ],
       "url": "https://github.com",
       "technologies": [
-        { "class": "devicon-react-original", "name": "Java" },
-        { "class": "devicon-javascript-plain", "name": "Spring Boot3" },
-        { "class": "devicon-javascript-plain", "name": "Kafka" },
+        { "class": "devicon-react-original", "name": "Python" },
+        { "class": "devicon-javascript-plain", "name": "Go" },
+        { "class": "devicon-javascript-plain", "name": "Node.js" },
+        { "class": "devicon-javascript-plain", "name": "WebSockets" },
+        { "class": "devicon-javascript-plain", "name": "Web3.js" },
+        { "class": "devicon-javascript-plain", "name": "AWS" },
         { "class": "devicon-javascript-plain", "name": "Redis" },
-        { "class": "devicon-javascript-plain", "name": "Netty" },
-        { "class": "devicon-javascript-plain", "name": "Junit5" },
-        { "class": "devicon-javascript-plain", "name": "Kubernets" },
-        { "class": "devicon-javascript-plain", "name": "Docker" },
-        { "class": "devicon-javascript-plain", "name": "AWS EC2 & Elasticache" }
+        { "class": "devicon-javascript-plain", "name": "Docker" }
       ]
     },
     {
@@ -82,7 +81,7 @@
       "technologies": [
         { "class": "devicon-react-original", "name": "FastAPI" },
         { "class": "devicon-javascript-plain", "name": "Python" },
-        { "class": "devicon-javascript-plain", "name": "Angular" },
+        { "class": "devicon-javascript-plain", "name": "React.js" },
         { "class": "devicon-javascript-plain", "name": "Redis" },
         { "class": "devicon-javascript-plain", "name": "Docker" },
         { "class": "devicon-javascript-plain", "name": "AWS" },
@@ -114,14 +113,34 @@
 
   "experience": [
     {
-      "company": "AriesView",
-      "title": "Software Engineer, AI",
-      "years": "05.2025 - Present",
+      "company": "Cronk LLC",
+      "title": "Software Engineer",
+      "years": "02.2026 - Present",
       "mainTech": [
         "Full-stack Web Development",
         "Backend Development",
-        "Frontend Development",
-        "Testing"
+        "Cloud Infrastructure",
+        "AI Integration"
+      ],
+      "technologies": [
+        "React",
+        "Go",
+        "Express.js",
+        "JavaScript",
+        "TypeScript",
+        "AWS",
+        "AI Gemini"
+      ]
+    },
+    {
+      "company": "AriesView",
+      "title": "Software Engineer, AI",
+      "years": "05.2025 - 01.2026",
+      "mainTech": [
+        "Full-stack Development",
+        "AI & LLM Systems",
+        "Backend Platforms",
+        "Data & AI Pipelines"
       ],
       "technologies": [
         "LLM",
@@ -132,6 +151,7 @@
         "Express.js",
         "Azure",
         "LangChain",
+        "MOE",
         "OpenAI",
         "OCR"
       ]
@@ -145,7 +165,8 @@
         "Full Stack Development",
         "Data Engineering",
         "ETL Pipelines",
-        "Backend APIs"
+        "Backend APIs",
+        "CI/CD & DevOps"
       ],
       "technologies": [
         "Java 8",
@@ -157,7 +178,8 @@
         "Snowflake",
         "Redshift",
         "Kubernetes",
-        "Docker"
+        "Terraform",
+        "Microservices"
       ]
     },
     {
@@ -166,14 +188,14 @@
       "years": "01.2020 - 05.2020",
       "mainTech": [
         "Frontend",
-        "Backend Development",
+        "Backend API Development",
         "REST API Integration"
       ],
       "technologies": [
-        "REST API",
+        "REST APIs",
         "PostgreSQL",
-        "Java 8",
-        "Spring Boot",
+        "Django",
+        "Express.js",
         "Postman",
         "HTML5",
         "CSS3",

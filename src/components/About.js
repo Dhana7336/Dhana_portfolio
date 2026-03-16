@@ -10,24 +10,24 @@ const About = () => {
       basic_info: {
         description_header: "WHAT I DO?",
         about: 
-        `With a strong foundation in full-stack development and data engineering, I build intelligent, scalable systems that merge software engineering with AI/ML technologies. I specialize in designing intuitive front-end experiences, architecting robust back-end services, and building data pipelines that enable real-time insights, automation, and seamless product scalability. My work focuses on performance, maintainability, and user-centric design turning complex problems into reliable, production-ready solutions.
-        
-        I’m currently focused on developing next-generation AI-driven applications, integrating LLM, RAG frameworks, conversational AI to power chatbots and domain-specific systems. Leveraging tools like TensorFlow, PyTorch, and cloud platforms including AWS, Azure,  GCP, I create scalable, secure, and resilient architectures. I’m passionate about bridging cloud-native systems, data workflows, and AI/ML models to deliver impactful, intelligent products that accelerate innovation and business growth.`,
+        `I’m an AI and full-stack engineer focused on building intelligent, production grade systems that combine modern software engineering with applied AI. I’ve worked across both corporate environments and startup teams, designing and shipping end-to-end products from scalable backend services and data pipelines to intuitive front-end interfaces and real-time dashboards while owning the full software lifecycle including architecture, development, testing, deployment, and system reliability.
+
+         My recent work includes developing AI-powered applications using LLMs such as OpenAI and Gemini, building conversational chat and voice interfaces, and integrating AI into operational systems. I’ve built platforms such as a multi-channel Order Management system and a Property Valuation analytics dashboard, using technologies like Python, Go, Java, TypeScript, React, and cloud infrastructure to create scalable tools that improve decision-making and automate complex workflows.`,
         whatido: [
           {
-            title: "Full-Stack Development",
-            description: "Built responsive, high-performance front-end applications using React.js and TypeScript, and architected robust back-end APIs with Node.js, Python (Flask/FastAPI), and Spring Boot for banking clients. Delivered scalable systems supporting 500K+ daily transactions, improving performance by 40% and reducing operational errors by 25%.",
+            title: "Full-Stack Engineering",
+            description: "Design and build end-to-end applications using React, TypeScript, and modern backend frameworks such as Node.js, Python, and Go. I develop scalable APIs, distributed services, and full-stack platforms across fintech, e-commerce systems, and LegalTech systems including order management,financial transaction processing, analytics platforms, and operational tools that support high-volume real-time workflows.",
             icon: "💻"
           },
           {
-            title: "Data Engineering",
-            description: "Designed and implemented intelligent data pipelines for financial workflows, enabling real-time analytics, fraud detection, and reporting. Optimized PostgreSQL databases, improved query performance, and ensured data integrity across transaction systems, increasing processing throughput by 30%.",
-            icon: "📊"
+            title: "AI Engineering",
+            description: "Design and develop AI-powered applications using LLMs such as OpenAI and Gemini, building conversational chat and voice interfaces, RAG pipelines, AI-driven automation workflows. I work with frameworks such as LangChain and vector databases to integrate embeddings, semantic retrieval, and intelligent agents into production systems that enhance decision-making and automate complex business processes.",
+            icon: "🤖"
           },
           {
-            title: "Cloud Architecture",
-            description: "Deployed and managed cloud-native solutions on AWS and Azure to ensure reliability, autoscaling, and secure operations for high-volume banking applications. Integrated advanced AI/ML models, including LLMs and RAG-based conversational AI, into SaaS platforms, enabling intelligent chatbots and domain-specific insights that enhanced user engagement by 35%.",
-            icon: "☁️"
+            title: "Backend & Platform Engineering",
+            description: "Build scalable backend platforms and microservices architectures with event-driven systems, data pipelines, and high-performance APIs. I focus on reliability, observability, and cloud-native infrastructure to support large-scale production systems across financial, commerce, and analytics platforms.",
+            icon: "⚙️"
           }
         ]
       }

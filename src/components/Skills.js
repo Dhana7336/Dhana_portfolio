@@ -4,15 +4,52 @@ import "./Skills.scss";
 const skillsData = [
   {
     category: "Full Stack Engineer",
-    skills: ["React.js", "Next.js", "Python", "Java", "C#", "Node.js", "Express.js", "Spring Boot", "TypeScript", "REST API", "GraphQL"]
+    skills: [
+"React",
+"Next.js",
+"TypeScript",
+"Node.js",
+"Python",
+"Go",
+"Ruby on Rails",
+"Java",
+"REST APIs",
+"GraphQL",
+"Microservices"
+]
   },
   {
-    category: "Data Engineering",
-    skills: ["ETL", "PostgreSQL", "MySQL", "PySpark", "Apache Airflow", "Apache Kafka", "Data Pipelines", "Redshift", "Snowflake"]
+    category: "AI & Data Systems",
+    skills: [
+"LLMs",
+"LangChain",
+"RAG Pipelines",
+"Vector Databases",
+"OpenAI",
+"Gemini",
+"Hugging Face",
+"Ollama",
+"Embeddings",
+"Prompt Engineering",
+"ETL Pipelines",
+"Apache Airflow"
+]
   },
   {
-    category: "Cloud & AI/ML",
-    skills: ["AWS", "Azure", "GCP", "LangChain", "OpenAI", "Hugging Face", "Vector Embeddings", "LLMs", "RAG", "MoE", "Prompting", "Fine-tuning"]
+    category: "Cloud & Infrastructure",
+    skills: [
+"AWS Lambda",
+"AWS Bedrock",
+"Azure Blob Storage",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Apache Kafka",
+"Snowflake",
+"PostgreSQL",
+"Redis"
+]
   }
 ];
 

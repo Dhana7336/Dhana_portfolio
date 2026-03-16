@@ -76,7 +76,7 @@ class Header extends Component {
     const jobTitles = [
       "Software Engineer",
       "Full Stack Developer", 
-      "Data Engineer",
+      "AI Engineer",
       "Frontend Developer"
     ];
   
@@ -144,8 +144,7 @@ class Header extends Component {
 
     {/* Intro line */}
     <p className="hero-intro">
-    Blending sleek software engineering with cutting-edge AI/ML to craft impactful, real-world solutions. I build intuitive front-end interfaces, scalable back-end systems, and intelligent data pipelines that power innovation and accelerate growth.
-    </p>
+      Blending strong software engineering with applied AI to build intelligent, production-grade systems. I design scalable backend platforms, AI-powered workflows, and full-stack applications spanning data pipelines, LLM integrations, testing, deployment, and system reliability to deliver real-world tools that improve how teams operate. </p>
 
     {/* Headline */}
     
